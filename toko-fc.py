@@ -1,6 +1,3 @@
-from typing import OrderedDict
-
-
 print("\n\n")
 
 # Tampil Menu
@@ -17,6 +14,7 @@ print("\n")
 # Input
 banyakJenis = int(input("Banyak Jenis   : "))
 print("")
+
 for i in range(banyakJenis) :
     print("Jenis ke-" + str(i+1))
     kodePotong = input("Kode Potong [D/P/S] : ")
@@ -33,7 +31,7 @@ for i in range(banyakJenis) :
         hargaSatuan = 2000
         totalBayar = hargaSatuan * banyakPotong
 
-    if (kodePotong == "S" or kodePotong == "s") :
+    elif (kodePotong == "S" or kodePotong == "s") :
         jenisPotong = "Sayap"
         hargaSatuan = 1500
         totalBayar = hargaSatuan * banyakPotong
@@ -49,11 +47,11 @@ for i in range(banyakJenis) :
 # Output
 print("\n")
 print("GEROBAK FRIED CHICKEN")
-print("==============================================")
-print("| No.    Jenis       Harga   Banyak  Jumlah  |")
-print("|        Potong      Satuan  Beli    Harga   |")
-print("==============================================")
-print("| %i     %s          %i      %i      %i      |", i, jenisPotong, hargaSatuan, banyakPotong, totalBayar)
+print("======================================================")
+print("| No.    Jenis       Harga       Banyak      Jumlah  |")
+print("|        Potong      Satuan      Beli        Harga   |")
+print("======================================================")
+print("| %i     %s          Rp. %i      %i      Rp. %i  |" % (i, jenisPotong, hargaSatuan, banyakPotong, totalBayar))
 
 
 print("\n\n")
